@@ -23,6 +23,8 @@ function editThings($reason, $text, $conn, $tableName, $id){
         $sql = "UPDATE $tableName SET name='$text' WHERE id='$id'";
     } else if ($reason == "bio"){
         $sql = "UPDATE $tableName SET bio='$text' WHERE id='$id'";
+    } else if ($reason == "fcm"){
+        $sql = "UPDATE $tableName SET fcm='$text' WHERE id='$id'";
     } else if ($reason == "username"){
         $sqlCheck = "SELECT * FROM $tableName WHERE username='$text'";
         $resultCheck = mysqli_query($conn, $sqlCheck);
