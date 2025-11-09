@@ -1,0 +1,13 @@
+CREATE TABLE `userinfo` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `username` VARCHAR(100) NOT NULL,
+  `bio` VARCHAR(255) NOT NULL DEFAULT 'Hello!',
+  `createTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `image` VARCHAR(255) NOT NULL DEFAULT 'http://tajimz.com/zeesend/pics/default.jpeg',
+  `status` VARCHAR(50) NOT NULL DEFAULT 'done',
+  `fcm` VARCHAR(255) NOT NULL DEFAULT 'fcm',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

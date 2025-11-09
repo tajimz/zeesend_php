@@ -1,0 +1,8 @@
+CREATE TABLE `chatRoom` (
+  `room_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user1_id` text NOT NULL,
+  `user2_id` text NOT NULL,
+  `last_updated` datetime NOT NULL DEFAULT current_timestamp(),
+  `last_message` varchar(255) NOT NULL DEFAULT 'chat created',
+  PRIMARY KEY (`room_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
